@@ -1,0 +1,28 @@
+/* 集中处理字体 */
+@font-face {
+  font-family: 'DS-Digital';
+  src: url('./DS-DIGIT.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ceyyt';
+  src:
+    url('./ceyyt.woff2') format('woff2'),
+    url('./ceyyt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Regular';
+  src:
+    url('./Regular.woff2') format('woff2'),
+    url('./Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Dingding';
+  src:
+    url('./dingding.woff2') format('woff2'),
+    url('./dingding.woff') format('woff');
+}

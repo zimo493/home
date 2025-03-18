@@ -1,0 +1,14 @@
+dist
+node_modules
+public
+.husky
+.vscode
+.idea
+*.sh
+*.md
+
+src/assets
+stats.html
+
+src/styles/animate.css
+src/styles/animate.min.css
