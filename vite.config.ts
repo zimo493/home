@@ -53,10 +53,10 @@ export default defineConfig({
     port: 1031, // 应用端口
     open: true, // 运行是否自动打开浏览器
     proxy: {
-      "/powerword": {
+      "/power-word": {
         changeOrigin: true,
         target: "https://open.iciba.com",
-        rewrite: (path: string) => path.replace("/powerword", ""),
+        rewrite: (path: string) => path.replace("/power-word", ""),
       },
     },
   },

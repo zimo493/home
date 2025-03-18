@@ -104,7 +104,7 @@ export const useApp = () => {
 
   // 获取词霸
   const getWord = async () => {
-    const res = await axios.get<IPowerword>("/powerword/dsapi/");
+    const res = await axios.get<IPowerword>("/power-word/dsapi/");
 
     zh.value = res.data.note + randomValue();
     en.value = res.data.content + randomValue();
@@ -115,7 +115,7 @@ export const useApp = () => {
   /* 随机取出元素 */
   const randomValue = () => config.emojis[Math.floor(Math.random() * config.emojis.length)];
 
-  const zh = ref<string>("");
+  const zh = ref<string>(config.clause_zh + randomValue());
   const en = ref<string>(config.clause_en + randomValue());
 
   onMounted(() => init());
