@@ -110,7 +110,7 @@ export const useApp = () => {
     en.value = res.data.content + randomValue();
   };
 
-  getWord();
+  void getWord();
 
   /* 随机取出元素 */
   const randomValue = () => config.emojis[Math.floor(Math.random() * config.emojis.length)];
@@ -133,8 +133,8 @@ export const useApp = () => {
   };
 
   /* 输入文字 */
-  const start = (item: string) => {
-    return new Promise<void>((resolve) => {
+  const start = (item: string) =>
+    new Promise<void>((resolve) => {
       let index = 0;
       const start_timer = setInterval(() => {
         motto.value += item.charAt(index);
@@ -144,28 +144,26 @@ export const useApp = () => {
         }
       }, 200);
     });
-  };
 
   /* 删除文字 */
-  const back = (item: string) => {
-    return new Promise<void>((resolve) => {
+  const back = (item: string) =>
+    new Promise<void>((resolve) => {
       const time = setTimeout(() => {
         const it = item;
         const del_timer = setInterval(() => {
           item = item.slice(0, -1);
           motto.value = item;
-          if (motto.value.toString().length == 0) {
+          if (motto.value.toString().length === 0) {
             clearInterval(del_timer);
             clearTimeout(time);
             if (config.mottos.indexOf(it) === config.mottos.length - 1) {
-              init();
+              void init();
             }
             resolve();
           }
         }, 80);
       }, 1000);
     });
-  };
 
   /* 打开新页面 */
   const open = (url: string) => window.open(url);
