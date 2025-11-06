@@ -62,7 +62,7 @@ export default {
     //   url: 'https://admin.huzimo.vip'
     // }
   ],
-  name: "胡子陌",
+  name: "nuyoah",
   avatar,
   love,
   menu,
