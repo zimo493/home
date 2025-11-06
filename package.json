@@ -83,6 +83,7 @@
     "postcss-html": "^1.8.0",
     "postcss-scss": "^4.0.9",
     "prettier": "^3.6.2",
+    "rollup": "^4.52.5",
     "sass": "^1.93.3",
     "stylelint": "^16.25.0",
     "stylelint-config-html": "^1.1.0",
