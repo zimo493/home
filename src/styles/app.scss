@@ -1,5 +1,14 @@
 @import "@/assets/font/font.css";
 
+a {
+  color: var(--el-color-primary);
+}
+
+a:hover {
+  color: var(--el-color-primary);
+  text-decoration: underline;
+}
+
 .carousel {
   position: absolute;
   z-index: 3;
@@ -77,11 +86,6 @@ img {
     justify-content: center;
     font-size: 12px;
     color: var(--el-text-color-regular);
-
-    a:hover {
-      color: var(--el-color-primary);
-      text-decoration: underline;
-    }
   }
 
   .el-main {
@@ -251,10 +255,6 @@ img {
 
   .el-divider {
     border-color: var(--el-text-color-secondary);
-  }
-
-  a {
-    color: var(--el-color-primary);
   }
 
   .icp {
