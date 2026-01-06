@@ -16,10 +16,10 @@ export default {
   title: "Vite + Vue3 + TS",
   // 版权和备案信息
   copyright: {
-    time: "2022-2024",
+    time: `2021-${new Date().getFullYear()}`,
     use: "huzimo",
     url: "https://github.com/zimo493",
-    name: "zimo",
+    name: "ZiMo",
     icp: "",
     recordNum: "",
     recordUrl: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34102302000062",
@@ -57,10 +57,10 @@ export default {
       title: "Cron表达式生成器",
       url: "https://github.com/zimo493/vue-cron-generate",
     },
-    // {
-    //   title: 'Vue3后台管理系统',
-    //   url: 'https://admin.huzimo.vip'
-    // }
+    {
+      title: "vue3-naiveui-admin",
+      url: "https://github.com/zimo493/vue3-naiveui-admin",
+    },
   ],
   name: "nuyoah",
   avatar,
@@ -101,7 +101,7 @@ export default {
     "差之毫厘，谬以千里",
     "盛年不重来，一日难再晨",
     "每每旭日东升，都是崭新的开始",
-    // "我们要迈向未来，而不是沉湎于过去",
+    "我们要迈向未来，而不是沉湎于过去",
     "Do all things with love.",
     "有些人因罪恶而升迁，有些人因美德而没落",
     "森林中有两条路，我选择了人迹罕至的那条",

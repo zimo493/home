@@ -106,8 +106,8 @@ export const useApp = () => {
   const getWord = async () => {
     const res = await axios.get<IPowerword>("/power-word/dsapi/");
 
-    zh.value = res.data.note + randomValue();
-    en.value = res.data.content + randomValue();
+    zh.value = res.data.note;
+    en.value = res.data.content;
   };
 
   void getWord();
